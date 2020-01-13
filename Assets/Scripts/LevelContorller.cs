@@ -43,7 +43,8 @@ public class LevelContorller : MonoBehaviour
         int levelNumber = int.Parse(SceneManager.GetActiveScene().name.Split(' ')[1]);
         if (levelNumber >= 8)
             SceneManager.LoadScene("Level " + 1);
-        SceneManager.LoadScene("Level " + (int)(levelNumber + 1));
+        else
+            SceneManager.LoadScene("Level " + (int)(levelNumber + 1));
 
     }
 
